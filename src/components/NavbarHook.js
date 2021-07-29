@@ -5,7 +5,7 @@ import { AuthContextFunc } from '../contexts/AuthContextFunc'
 const NavbarHook = () => {
     console.log("Auth context:" + AuthContextFunc);
     const { isDarkTheme, darkTheme, lightTheme } = useContext(ThemeContext);
-    const { isLoggedIn, changeAuthStatus } = AuthContextFunc;
+    const { isLoggedIn, changeAuthStatus } = useContext(AuthContextFunc);
     const theme = isDarkTheme ? darkTheme : lightTheme;
     return(
         <nav style={{ background: theme.background, color:theme.text, minHeight:'120px'}}>
