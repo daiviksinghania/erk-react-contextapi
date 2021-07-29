@@ -14,7 +14,7 @@ class Navbar extends Component {
                                 const { isLoggedIn, changeAuthStatus } = authContext;
                                 const theme = isDarkTheme ? darkTheme : lightTheme;
                                 return(
-                                    <nav style={{ background: theme.background, color:theme.text, height:'120px'}}>
+                                    <nav style={{ background: theme.background, color:theme.text, minHeight:'120px'}}>
                                         <h2 style={{ textAlign: 'center' }}>Context Api</h2>
                                         <p 
                                         onClick={changeAuthStatus}

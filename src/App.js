@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import TodoList from './components/TodoList';
 import ThemeContextProvider from './contexts/ThemeContext';
 import AuthContextProvider from './contexts/AuthContext';
+import NavbarHook from './components/NavbarHook';
+import TodoListHook from './components/TodoListHook';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <ThemeContextProvider>
             <Navbar></Navbar>
             <TodoList></TodoList>
+            <NavbarHook />
+            <TodoListHook />
           </ThemeContextProvider>
         </AuthContextProvider>
       </div>
